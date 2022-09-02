@@ -38,14 +38,9 @@
         return (
           <>
             <h1>해커뉴스 목록</h1>
-            <ul>
-              {newsList.map((news) => (
-                <div>
-                  <div>{news.title}</div>
-                  <div>{news.comments_count}</div>
-                </div>
-              ))}
-            </ul>
+            {/* JSX */}
+            {newsList.map((news) => console.log(news.id + ", " + news.title))}
+            {/* JavaScript*/}
           </>
         );
       }
